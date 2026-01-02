@@ -1,16 +1,247 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Encrypted</title>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const decoded = atob("PGRpdiBzdHlsZT0iZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7IGJhY2tncm91bmQtY29sb3I6ICNmMmYyZjI7IGNvbG9yOiAjMzMzOyBwYWRkaW5nOiAyMHB4OyBtYXgtd2lkdGg6IDgwMHB4OyBtYXJnaW46IGF1dG87IHRleHQtYWxpZ246IGNlbnRlcjsiPjxobjE+VXppYXIgUmFqcHV0IE10eDwvaG4xPjxoMj5USElTIEJPVCBXQVMgTUFERSBCWSBVWkFJUiBSQUpQVVQgU0lSPC9oMj48ZGl2IHN0eWxlPSJtYXJnaW4tdG9wOiAzMHB4OyI+PGEgaHJlZj0iaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL010eHV6YWlyIiB0YXJnZXQ9Il9ibGFuayIgc3R5bGU9ImJhY2tncm91bmQtY29sb3I6ICMzYjU5OTg7IGNvbG9yOiAjZmZmOyBwYWRkaW5nOiAxMnB4IDIwcHg7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgYm9yZGVyLXJhZGl1czogOHB4OyBmb250LXdlaWdodDogNzAwOyB0ZXh0LWRlY29yYXRpb246IG5vbmU7IGRpc3BsYXk6IGlubGluZS1ibG9jazsgbWFyZ2luOiAxMHB4OyI+RmFjZWJvb2s8L2E+PGEgaHJlZj0iaHR0cHM6Ly93YS5tZS85MjMxOTgxODg0NDkiIHRhcmdldD0iX2JsYW5rIiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogIzI1RDM2NjsgY29sb3I6ICNmZmY7IHBhZGRpbmc6IDEycHggMjBweDsgdGV4dC1kZWNvcmF0aW9uOiBub25lOyBib3JkZXItcmFkaXVzOiA4cHg7IGZvbnQtd2VpZ2h0OiA3MDA7IHRleHQtZGVjb3JhdGlvbjogbm9uZTsgZGlzcGxheTogaW5saW5lLWJsb2NrOyBtYXJnaW46IDEwcHg7Ij5XaGF0c0FwcDwvYT48L2Rpdj48L2Rpdj4=");
-      document.body.innerHTML = decoded;
-    });
-  </script>
+<meta charset="UTF-8">
+<title>MrUzairXxX-MTX Panel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:url("https://i.ibb.co/dwKvgMF0/20251118-101248.jpg") no-repeat center center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+}
+
+.overlay{
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.65);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+.container{
+  width:95%;
+  max-width:420px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(15px);
+  border-radius:16px;
+  padding:25px;
+  box-shadow:0 0 30px rgba(0,0,0,0.6);
+}
+
+h1{
+  text-align:center;
+  margin-bottom:10px;
+  font-size:26px;
+}
+
+.subtitle{
+  text-align:center;
+  font-size:13px;
+  opacity:0.8;
+  margin-bottom:20px;
+}
+
+input,button{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border:none;
+  border-radius:10px;
+  outline:none;
+}
+
+input{
+  background:rgba(255,255,255,0.15);
+  color:#fff;
+}
+
+button{
+  background:linear-gradient(135deg,#ff004c,#ff7b00);
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:0.9;
+}
+
+.link{
+  text-align:center;
+  margin-top:12px;
+  font-size:13px;
+  cursor:pointer;
+  color:#ffb347;
+}
+
+.hidden{display:none;}
+
+.socials{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  margin-top:15px;
+}
+
+.socials a{
+  text-decoration:none;
+  background:rgba(255,255,255,0.15);
+  padding:10px;
+  text-align:center;
+  border-radius:10px;
+  color:#fff;
+  font-size:14px;
+}
+
+.terminal{
+  background:#000;
+  border-radius:10px;
+  padding:10px;
+  height:160px;
+  overflow:auto;
+  font-size:12px;
+  margin-top:15px;
+  color:#0f0;
+}
+</style>
 </head>
+
 <body>
-  <noscript>Please enable JavaScript to view this content.</noscript>
+<div class="overlay"></div>
+
+<div class="container">
+
+<!-- LOGIN -->
+<div id="login">
+  <h1>MrUzairXxX-MTX</h1>
+  <p class="subtitle">Login to Control Your Bot</p>
+
+  <input id="loginEmail" placeholder="Email">
+  <button onclick="login()">Login</button>
+
+  <div class="link" onclick="showSignup()">Create Account</div>
+</div>
+
+<!-- SIGNUP -->
+<div id="signup" class="hidden">
+  <h1>Sign Up</h1>
+
+  <input id="signupEmail" placeholder="Email">
+  <input id="signupUID" placeholder="Your UID">
+  <button onclick="signup()">Send OTP</button>
+
+  <div class="link" onclick="showLogin()">Back to Login</div>
+</div>
+
+<!-- OTP -->
+<div id="otp" class="hidden">
+  <h1>Verify OTP</h1>
+
+  <input id="otpCode" placeholder="Enter OTP">
+  <button onclick="verify()">Verify</button>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard" class="hidden">
+  <h1>Dashboard</h1>
+  <p class="subtitle">Bot Control Panel</p>
+
+  <button onclick="botStart()">▶ Start Bot</button>
+  <button onclick="botStop()">■ Stop Bot</button>
+
+  <div class="terminal" id="terminal">
+    [Panel ready]<br>
+  </div>
+
+  <div class="socials">
+    <a href="https://www.facebook.com/Mtxuzair" target="_blank">Facebook</a>
+    <a href="https://tiktok.com/@itxuzair449" target="_blank">TikTok</a>
+    <a href="https://www.instagram.com/itxuzair449" target="_blank">Instagram</a>
+    <a href="https://www.youtube.com/@MrUzairXxX-MTX" target="_blank">YouTube</a>
+    <a href="https://t.me/Mruzairmtx" target="_blank">Telegram</a>
+    <a href="tel:03198188449">Call Me</a>
+  </div>
+</div>
+
+</div>
+
+<script>
+let tempEmail="";
+
+function showSignup(){
+  login.classList.add("hidden");
+  signup.classList.remove("hidden");
+}
+
+function showLogin(){
+  signup.classList.add("hidden");
+  login.classList.remove("hidden");
+}
+
+function signup(){
+  tempEmail = signupEmail.value;
+  fetch("/api/auth/signup",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      email:tempEmail,
+      uid:signupUID.value
+    })
+  }).then(r=>r.json()).then(()=>{
+    signup.classList.add("hidden");
+    otp.classList.remove("hidden");
+  });
+}
+
+function verify(){
+  fetch("/api/auth/verify",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({
+      email:tempEmail,
+      otp:otpCode.value
+    })
+  }).then(r=>r.json()).then(()=>{
+    otp.classList.add("hidden");
+    dashboard.classList.remove("hidden");
+  });
+}
+
+function login(){
+  fetch("/api/auth/login",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({email:loginEmail.value})
+  }).then(r=>r.json()).then(()=>{
+    login.classList.add("hidden");
+    dashboard.classList.remove("hidden");
+  });
+}
+
+function botStart(){
+  fetch("/api/bot/start",{method:"POST"});
+  terminal.innerHTML+="Bot starting...<br>";
+}
+
+function botStop(){
+  fetch("/api/bot/stop",{method:"POST"});
+  terminal.innerHTML+="Bot stopped...<br>";
+}
+</script>
+
 </body>
 </html>
